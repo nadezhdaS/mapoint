@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+.context {
+    width: 100%;
+    position: absolute;
+    top:38vh;
+    z-index: 10;
+}
+
+.context h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+.context p{
+    text-align: center;
+}
+.context button{
+    display: block;
+    margin: 30px auto 20px auto;
+    padding-left: 43px;
+    width:150px;
+    height:50px;
+    font-size:16px;
+    font-weight: bold;
+    color:gray;
+    background-image: url('play-market-logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border:none;
+    border-radius: 5px;
+}
+#play-market{
+    text-decoration: none;
+}
+.context button:hover{
+    cursor: pointer;
+}
+.context button:active{
+    outline: none;
+}
+.context button:focus{
+    outline: none;
+}
+.context a{
+    font-size: 14px;
+    color: #2ab9a5;
+}
+
+
+.area{
+    background: #fff;   
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    box-sizing: border-box;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fe0000;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    border: 9px solid#34dbc4;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    border: 6px solid#fe0000;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    border: 9px solid#fed004;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    border: 6px solid#34dbc4;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 70px;
+    height: 70px;
+    border: 17px solid#355e7c;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 50px;
+    height: 50px;
+    border: 13px solid#fed004;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border: 7px solid#34dbc4;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 25px;
+    height: 25px;
+    border: 7px solid#355e7c;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 60px;
+    height: 60px;
+    border: 15px solid#fed004;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 100%;
+    }
+
+}
